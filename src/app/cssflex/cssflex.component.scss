@@ -1,0 +1,58 @@
+div.container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+div.container > div {
+  flex: 1 1 5em;
+  margin-left: 5px;
+  height: 50px;
+  background-color: yellow;
+}
+
+div.container > div:first-child {
+  margin-left: 0;
+}
+
+div.container > div.two {
+  flex: 2 2 100;
+  /** 10px is the missing margin of the missing box */
+}
+
+div.container > div.three {
+  flex: 3 3 calc(15em + 20px);
+  /** 20px is the missing margin of the two missing boxes */
+}
+
+.flex {
+  display: inline-flex;
+  height: 70px;
+  border: 2px solid #000;
+  margin: 0px 3px 10px;
+  vertical-align: top;
+  width: 600px;
+}
+
+.item {
+  text-align: center;
+  line-height: 50px;
+  flex-basis: 200px;
+}
+
+.item-1 {
+  background: #c00;
+}
+.item-2 {
+  background: #069;
+}
+.item-3 {
+  background: #fff;
+}
+.item-4 {
+  background: #459;
+}
+@for $i from 1 through 4 {
+  .item-#{$i} {
+    flex-shrink: $i;
+  }
+}

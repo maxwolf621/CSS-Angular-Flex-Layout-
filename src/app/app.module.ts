@@ -7,10 +7,29 @@ import { MaterialModule } from './material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { OfcComponent } from './ofc/ofc.component';
+import { CssflexComponent } from './cssflex/cssflex.component';
+import { MediarwdComponent } from './mediarwd/mediarwd.component';
+import { EmandremComponent } from './emandrem/emandrem.component';
+import { FxLayoutComponent } from './fx-layout/fx-layout.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, MaterialModule, AppRoutingModule],
-  declarations: [AppComponent, HomeComponent, OfcComponent],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    MaterialModule,
+    FlexLayoutModule,
+    AppRoutingModule,
+  ],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    OfcComponent,
+    CssflexComponent,
+    MediarwdComponent,
+    EmandremComponent,
+    FxLayoutComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

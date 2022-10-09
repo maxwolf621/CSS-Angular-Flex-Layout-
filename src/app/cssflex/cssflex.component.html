@@ -1,0 +1,75 @@
+<h2>grow</h2>
+<pre>
+.item1 {{ '{' }} 
+  width : w
+  flex-grow : x 
+{{ '}' }}
+
+.item2 {{ '{' }} 
+  width : ...
+  flex-grow : y 
+{{ '}' }}
+
+.item3 {{ '{' }} 
+  width : ...
+  flex-grow : z
+{{ '}' }}
+</pre>
+<p>Item1's size : w + freeSpace * x / sigma(x+y+z)</p>
+
+<h2>shrink</h2>
+<pre>
+.item1 {{ '{' }} 
+  width : w
+  flex-shrink : x 
+{{ '}' }}
+
+.item2 {{ '{' }} 
+  width : i
+  flex-shrink : y 
+{{ '}' }}
+
+.item3 {{ '{' }} 
+  width : d
+  flex-shrink : z
+{{ '}' }}
+</pre>
+
+<p>item1's shrink : w + (-) overflow * (w*x)/sigma(i*y + d*z + w*x)</p>
+
+<div class="container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+</div>
+<div class="container">
+  <div>other1</div>
+  <div class="two">two</div>
+  <div>other2</div>
+</div>
+<div class="container">
+  <div class="two">two</div>
+  <div>other1</div>
+  <div>other2</div>
+</div>
+<div class="container">
+  <div>other1</div>
+  <div>other2</div>
+  <div class="two">two</div>
+</div>
+<div class="container">
+  <div class="three">three</div>
+  <div>other</div>
+</div>
+<div class="container">
+  <div>other</div>
+  <div class="three">three</div>
+</div>
+
+<div class="flex flex-600">
+  <div class="item item-1">1</div>
+  <div class="item item-2">2</div>
+  <div class="item item-3">3</div>
+  <div class="item item-4">4</div>
+</div>
