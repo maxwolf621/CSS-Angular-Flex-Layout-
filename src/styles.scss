@@ -1,0 +1,15 @@
+/* Add application styles & imports to this file! */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic&amp;subset=latin-ext');
+
+@import './styles/darkMode';
+
+html {
+  background: var(--theme-background);
+  color: var(--theme-color);
+  transition: all ease-in-out 400ms;
+}
+mat-icon {
+  margin-left: 1 auto;
+}
