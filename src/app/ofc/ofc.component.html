@@ -1,130 +1,66 @@
-<html>
-  <head>
-    <style>
-      div.common{
-          width: 300px;`
-          height: 80px;
-          border: 1px solid black;
-          margin-top : 10px;
-      }
-      div.overflow-auto{
-          overflow: auto;
-      }
-      div.overflow-hidden{
-          overflow : hidden;
-      }
-      div.overflow-scroll{
-          overflow: scroll;
-      }
-      div.overflow-xy {
-          overflow-x: auto; /* Hide horizontal scrollbar */
-          overflow-y: auto; /* Add vertical scrollbar */
-      }
-      div.overflow-visible {
-        width: 200px;
-        height: 65px;
-        border: 1px solid;
-        overflow: visible;
-      }
-      div#parent1 {   /** float **/
-        float: right;
-        padding: 15px;
-      }
-      .div1 {
-        background: red;
-      }
-      .div2 {
-        background: yellow;
-      }
-      .div3 {
-        background: green;
-      }
-      div#parent2 {  /** float **/
-        float: left;
-        padding: 15px;
-      }
-      .divP1 {
-        background: red;
-      }
-      .divP2 {
-        background: yellow;
-      }
-      .divP3 {
-        background: green;
-      }
-      div.normalDiv{
-        border : 1px solid red;
-        text-align : center;
-      }
-    </style>
-  </head>
-  <body>
-    <h3>overflow : visible (default)</h3>
-    <p>有Overflow</p>
-    <div class="overflow-visible">
-      You can use the overflow property when you want to have better control of
-      the layout. The overflow property specifies what happens if content
-      overflows an element's box.
-    </div>
+<h3>overflow : visible (default)</h3>
+<div class="overflow-visible common">
+  You can use the overflow property when you want to have better control of the
+  layout. The overflow property specifies what happens if content overflows an
+  element's box.
+</div>
 
-    <br />
-    <br />
-    <br />
-    <br />
+<br />
+<br />
+<br />
+<br />
 
-    <h3>overflow : auto</h3>
-    <div class="overflow-auto common">
-      You can use the overflow property when you want to have better control of
-      the layout. The overflow property specifies what happens if content
-      overflows an element's box.
-    </div>
+<h3>overflow : auto</h3>
+<div class="overflow-auto common">
+  You can use the overflow property when you want to have better control of the
+  layout. The overflow property specifies what happens if content overflows an
+  element's box.
+</div>
 
-    <h3>overflow : hidden</h3>
-    <p>hide the overflow part</p>
-    <div class="overflow-hidden common">
-      You can use the overflow property when you want to have better control of
-      the layout. The overflow property specifies what happens if content
-      overflows an element's box.
-    </div>
+<h3>overflow : hidden</h3>
+<p>hide the overflow part</p>
+<div class="overflow-hidden common">
+  You can use the overflow property when you want to have better control of the
+  layout. The overflow property specifies what happens if content overflows an
+  element's box.
+</div>
 
-    <h3>overflow : scroll</h3>
-    <p>scroll bar to avoid overflow</p>
-    <div class="overflow-scroll common">
-      You can use the overflow property when you want to have better control of
-      the layout. The overflow property specifies what happens if content
-      overflows an element's box. You can use the overflow property when you
-      want to have better control of the layout. The overflow property specifies
-      what happens if content overflows an element's box.
-    </div>
+<h3>overflow : scroll</h3>
+<p>scroll bar to avoid overflow</p>
+<div class="overflow-scroll common">
+  You can use the overflow property when you want to have better control of the
+  layout. The overflow property specifies what happens if content overflows an
+  element's box. You can use the overflow property when you want to have better
+  control of the layout. The overflow property specifies what happens if content
+  overflows an element's box.
+</div>
 
-    <h3>overflow :overflow-x and overflow-y setup</h3>
-    <div class="overflow-xy common">
-      You can use the overflow property when you want to have better control of
-      the layout. The overflow property specifies what happens if content
-      overflows an element's box.
-    </div>
+<h3>overflow :overflow-x and overflow-y setup</h3>
+<div class="overflow-xy common">
+  You can use the overflow property when you want to have better control of the
+  layout. The overflow property specifies what happens if content overflows an
+  element's box.
+</div>
 
-    <h4>Flow & Clear</h4>
-    <div id="parent1" class="div1">float:right 1</div>
-    <div id="parent1" class="div2">Div 2</div>
-    <div id="parent1" class="div3">Div 3</div>
-    <p>
-      flow 屬性會按造順序排列,由左而右或由又至左<br />
-      當其他block沒有float屬性可能造成排版錯誤可以用clear : right | left | both
-      消除float屬性的side effect如下(使用clear以及沒使用的差別)
-    </p>
-    <div id="parent2" class="divP1">float:left 1</div>
-    <div id="parent2" class="divP2">Div 2</div>
-    <div id="parent2" class="divP3">Div 3</div>
-    <div class="normalDiv">Div 1</div>
-    <div class="normalDiv">Div 2</div>
-    <div class="normalDiv">Div 3</div>
-    <div id="parent2" class="divP1">float:left 1</div>
-    <div id="parent2" class="divP2">Div 2</div>
-    <div id="parent2" class="divP3">Div 3</div>
-    <div style="clear:both"></div>
-    <div class="normalDiv">Div 1</div>
-    <div class="normalDiv">Div 2</div>
-    <div class="normalDiv">Div 3</div>
-  </body>
-</html>
+<h4>Flow & Clear</h4>
+<div id="parent1" class="div1">float:right 1</div>
+<div id="parent1" class="div2">Div 2</div>
+<div id="parent1" class="div3">Div 3</div>
+<p>
+  flow 屬性會按造順序排列,由左而右或由又至左<br />
+  當其他block沒有float屬性可能造成排版錯誤可以用clear : right | left | both
+  消除float屬性的side effect如下(使用clear以及沒使用的差別)
+</p>
+<div id="parent2" class="divP1">float:left 1</div>
+<div id="parent2" class="divP2">Div 2</div>
+<div id="parent2" class="divP3">Div 3</div>
+<div class="normalDiv">Div 1</div>
+<div class="normalDiv">Div 2</div>
+<div class="normalDiv">Div 3</div>
+<div id="parent2" class="divP1">float:left 1</div>
+<div id="parent2" class="divP2">Div 2</div>
+<div id="parent2" class="divP3">Div 3</div>
+<div style="clear:both"></div>
+<div class="normalDiv">Div 1</div>
+<div class="normalDiv">Div 2</div>
+<div class="normalDiv">Div 3</div>

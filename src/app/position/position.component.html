@@ -1,0 +1,33 @@
+<h1>CSS position</h1>
+<p> fixed propery always fixed at top of view of page <br/> sticky p
+
+<div id="sticky-block">sticky block#1</div>
+
+<div id="block">position-relative-block#1</div>
+<p>relative object (&uarr; ) won't cover my content</p>
+
+<div id="fixed-block">fixed position</div>
+
+<div id="block">position-relative-block#2</div>
+
+<br />
+
+<div id="sticky-block">sticky block#2</div>
+<div id="absolute-block">
+  absolute block here,
+  <span [style.color]="'red'">i will cover everything</span>
+</div>
+<p>absolute block cover my content</p>
+
+<div id="out_block">
+  BLOCK-HEADER
+  <div id="sticky-block">sticky block in block #1</div>
+  BLOCK CONTENT NEXT TO STICKY BLOCK<br />
+  <div id="static-block" [style.color]="'#ffeead'">static block in block</div>
+  BLOCK CONTENT NEXT TO STATIC BLOCK<br />
+  <div id="absolute-block">absolute-block relatives to RELATIVE-BLOCK</div>
+  <div id="fixed-block">fixed block in relative block</div>
+  BLOCK CONTENT NEXT TO FIXED BLOCK
+  <div id="sticky-block">sticky block in block #2</div>
+  BLOCK CONTENT NEXT TO STICKY BLOCK
+</div>

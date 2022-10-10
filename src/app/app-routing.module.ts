@@ -6,6 +6,7 @@ import { EmandremComponent } from './emandrem/emandrem.component';
 import { MediarwdComponent } from './mediarwd/mediarwd.component';
 import { CssflexComponent } from './cssflex/cssflex.component';
 import { FxLayoutComponent } from './fx-layout/fx-layout.component';
+import { PositionComponent } from './position/position.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -18,6 +19,8 @@ const routes: Routes = [
   { path: 'mediarwd', component: MediarwdComponent },
   { path: 'cssflex', component: CssflexComponent },
   { path: 'flexlayout', component: FxLayoutComponent },
+  { path: 'media-rwd', component: MediarwdComponent },
+  { path: 'position', component: PositionComponent },
 ];
 
 @NgModule({

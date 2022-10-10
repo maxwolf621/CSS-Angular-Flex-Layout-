@@ -1,7 +1,12 @@
-<div fxLayoutGap="10">
-  <button mat-raised-button routerLink="home" color="accent">home</button>
-  <button mat-raised-button routerLink="ofc">ovreflow & flow & clear</button>
-  <button mat-raised-button routerLink="emandrem">css em and rem</button>
-  <button mat-raised-button routerLink="flexlayout">fxLayout</button>
-</div>
+<ng-container *ngFor="let com of coms">
+  <button
+    class="buttons-layout"
+    mat-raised-button
+    routerLink="{{ com.link }}"
+    color="{{ com.name === 'home' ? 'accent' : 'primary' }}"
+  >
+    {{ com.name }}
+  </button>
+</ng-container>
+
 <router-outlet></router-outlet>
