@@ -1,23 +1,10 @@
-@media (max-width: 460px) {
-  html {
-    font-size: 10px;
-  }
-}
-@media (max-width: 640px) {
-  html {
-    font-size: 12px;
-  }
-}
-
-html {
-  background-color: #03a6ff;
-  font-size: 62.5%;
-  font-family: Arial, sans-serif;
-}
 .well {
   margin: 2rem auto;
   padding: 1rem;
   max-width: 30rem;
+  background-color: #03a6ff;
+  font-size: 62.5%;
+  font-family: Arial, sans-serif;
 }
 h1 {
   margin: 0 0 2rem;
@@ -30,4 +17,15 @@ p {
 
 button {
   padding: 0.5rem 1rem;
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (max-width: 640px) {
+  html {
+    font-size: 12px;
+  }
 }
