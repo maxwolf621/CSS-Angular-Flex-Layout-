@@ -12,6 +12,7 @@ import { MediarwdComponent } from './mediarwd/mediarwd.component';
 import { EmandremComponent } from './emandrem/emandrem.component';
 import { FxLayoutComponent } from './fx-layout/fx-layout.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { CdkPortalComponent } from './cdk-portal/cdk-portal.component';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MediarwdComponent,
     EmandremComponent,
     FxLayoutComponent,
+    CdkPortalComponent
   ],
   bootstrap: [AppComponent],
 })

@@ -13,5 +13,7 @@ export class AppComponent {
     { name: 'flexLayout', link: 'flexlayout' },
     { name: 'position', link: 'position' },
     { name: 'media-rwd', link: 'media-rwd' },
+    { name: 'css-flex', link: 'cssf-lex' },
+    {name : 'cdkPortal' , link: 'cdk-portal'}
   ];
 }

@@ -7,6 +7,7 @@ import { MediarwdComponent } from './mediarwd/mediarwd.component';
 import { CssflexComponent } from './cssflex/cssflex.component';
 import { FxLayoutComponent } from './fx-layout/fx-layout.component';
 import { PositionComponent } from './position/position.component';
+import { CdkPortalComponent } from './cdk-portal/cdk-portal.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -17,10 +18,11 @@ const routes: Routes = [
   { path: 'ofc', component: OfcComponent },
   { path: 'emandrem', component: EmandremComponent },
   { path: 'mediarwd', component: MediarwdComponent },
-  { path: 'cssflex', component: CssflexComponent },
+  { path: 'css-flex', component: CssflexComponent },
   { path: 'flexlayout', component: FxLayoutComponent },
   { path: 'media-rwd', component: MediarwdComponent },
   { path: 'position', component: PositionComponent },
+  { path: 'cdk-portal', component: CdkPortalComponent },
 ];
 
 @NgModule({

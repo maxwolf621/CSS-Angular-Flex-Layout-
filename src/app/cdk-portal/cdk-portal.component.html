@@ -1,0 +1,36 @@
+<!-- elementRef -->
+<p #domPortalElementRef>domPortal Content</p>
+
+<div class="protal-layout">
+  <div class="buttons">
+    <button mat-button (click)="changePortal1()">
+      ngtemplate-portal-directive
+    </button>
+    <button mat-button (click)="changePortal2()">structrual-portal</button>
+    <button mat-button (click)="changePortal3()">portalTemplateRef</button>
+    <button mat-button (click)="changePortal4()">portalComponent</button>
+    <button mat-button (click)="changePortal5()">DomPortalElementRef</button>
+    <button mat-button (click)="createOutletOutOfApp()">domPortalOutlet</button>
+    <button mat-button (click)="addTemplatePortal()">
+      domPoralOutlet-Strctrual Directive *cdkPortal Content
+    </button>
+  </div>
+  <div [cdkPortalOutlet]="currentCdkPortal"></div>
+</div>
+
+<!-- add cdkPortal directive-->
+<ng-template cdkPortal let-context="var">
+  <p>cdkPortal template view 1th {{ context }}</p>
+  <!-- context corresponds to cdkPortalContext.var-->
+</ng-template>
+
+<!-- structrual directive -->
+<p *cdkPortal>structural *cdkPortal</p>
+
+<!-- templateRef -->
+<ng-template #cdkPortalTemplateRef>
+  <p>cdkPortalTemplate</p>
+</ng-template>
+
+<!-- cdkPortalOutlet -->
+<div cdkPortalOutlet #cdkPortalOutletTemplateRef="cdkPortalOutlet"></div>
